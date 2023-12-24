@@ -1,0 +1,478 @@
+<html>
+<title>我的网页 - htmlpage.cn</title>
+<div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        .navbar {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          background: linear-gradient(to right, #333, #555, #777, #999, #bbb, #999, #777, #555, #333);
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        body {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+        }
+        /* 给每个部分的图片添加一个固定的宽度和高度 */
+        .section img {
+          width: 300px;
+          height: 300px;
+        }
+        /* 给每个部分的图片添加一个外边距，从而实现一些间距和对齐效果 */
+        .section img {
+          margin: 10px;
+        }
+        .navbar li a {
+            display: block;
+            width: 100%;
+          }
+
+          /* 当视口宽度小于600px时，调整网页的布局 */
+          .section {
+            width: 100%;
+          }
+
+          .section img {
+            width: 80%;
+          }
+
+          .c1, .d2, .e3, .g1, .h2, .i3, .j4 {
+            width: 100%;
+            height: 200px;
+          }
+    
+
+        .section img:hover {
+          transform: rotate(360deg);
+        }
+
+        /* 给按钮添加缩放效果 */
+        .section input[type=submit] {
+          transform: scale(1);
+          transition: transform 0.5s;
+        }
+
+        .section input[type=submit]:hover {
+          transform: scale(1.2);
+        }
+        .logo path {
+            pointer-events: none;
+            fill: none;
+            stroke-linecap: round;
+            stroke-width: 7;
+            stroke: rgb(255, 255, 255);
+        }
+
+        .wechat-group img {
+            max-width: 220px;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            width: 100%;
+        }
+
+        .welcome-img img {
+            width: 100%;
+        }
+
+        .lead.fs-24.lh-sm.px-md-5.px-xl-15.px-xxl-10.mb-7 {
+            font-size: 12px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3faeb;
+        }
+
+        .row.text-center {
+            background-color: #ddfff0;
+        }
+
+        .wrapper.bg-gradient-primary {
+            background-color: #9cdbee;
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+        }
+
+        header .navbar-nav a.nav-link {
+            color: rgb(119, 119, 119);
+        }
+
+        header .navbar-nav a.nav-link:hover {
+            color: rgb(82, 139, 255);
+        }
+
+        header .navbar-nav .active a.nav-link {
+            color: rgb(68, 68, 68);
+        }
+
+        header .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        header.bg-dark .navbar-nav a.nav-link {
+            color: rgb(220, 220, 220);
+        }
+
+        header.bg-dark .navbar-nav a.nav-link:hover {
+            color: rgb(82, 139, 255);
+        }
+
+        header.bg-dark .navbar-nav .active a.nav-link {
+            color: rgb(255, 255, 255);
+        }
+
+        header.bg-dark .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        body {
+            background: linear-gradient(to bottom, lightblue, lightpink);
+        }
+        header+header {
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-top-color: rgb(238, 238, 238);
+        }
+
+        .display-1.mb-3.text-white {
+            font-size: 59px;
+        }
+
+        .lead.px-md-12.px-lg-12.px-xl-15.px-xxl-18 {
+            text-align: left;
+        }
+
+        .wrapper.image-wrapper.bg-image.bg-overlay.text-white {
+            background-repeat: repeat;
+            background-position: left top;
+            background-attachment: scroll;
+            background-size: auto;
+            background-image: url('https://template-1253409072.cos.ap-guangzhou.myqcloud.com/user-upload-images/5531/R.jpg');
+        }
+
+        .nav-link {
+            color: #000000;
+            text-align: left;
+        }
+
+        .nav-link.dropdown-toggle {
+            color: #000000;
+        }
+
+        .container.pt-14.pt-md-16.pb-13.pb-md-15 {
+            font-size: 15px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .fdb-block .text-h1,
+        .fdb-block h1 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5em;
+            margin-top: 0.3em;
+            font-weight: 400;
+        }
+
+        .fdb-block img.fdb-icon {
+            width: 60px;
+        }
+
+        .fdb-block img+h3,
+        .fdb-block img+h4,
+        .fdb-block img+p {
+            margin-top: 20px;
+        }
+
+        .fdb-block .text-h3,
+        .fdb-block h3 {
+            font-size: 0.875rem;
+            margin-bottom: 0.5em;
+            margin-top: 0.3em;
+            font-weight: 400;
+        }
+
+        .c21769 {
+            right: 10%;
+            bottom: 25%;
+        }
+
+        .c22016 {
+            left: 18%;
+            bottom: 25%;
+        }
+
+        .c22254 {
+            right: 3%;
+            bottom: 25%;
+        }
+
+        .c22492 {
+            left: 12%;
+            bottom: 25%;
+        }
+
+        .c36306 {
+            color: black;
+            width: 742.6666717529297px;
+            height: 489.66668701171875px;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+        }
+
+        .container.pt-10.pt-md-14.text-center {
+            background-color: #f6eded;
+        }
+
+        .c37238 {
+            color: black;
+            width: 1007.3333358764648px;
+        }
+
+        .c38378 {
+            color: black;
+            width: 711.9999389648438px;
+            height: 458.28168701171876px;
+        }
+
+        .c38772 {
+            color: black;
+            width: 1125px;
+            height: 531.635px;
+        }
+        .form-contact {
+            margin: 0 auto; /* 设置表单的外边距为自动，让它居中显示 */
+            width: 50%; /* 设置表单的宽度为50% */
+            border: 1px solid black; /* 设置表单的边框为1像素的黑色实线 */
+            padding: 10px; /* 设置表单的内边距为10像素 */
+        }
+
+        .input-contact {
+            display: block; /* 设置输入框的显示方式为块级元素，让它换行显示 */
+            margin: 5px; /* 设置输入框的内边距为5像素 */
+            width: 80%; /* 设置输入框的宽度为80% */
+            /* 你还可以添加其他的样式，比如字体、颜色、背景等 */
+        }
+    </style>
+    <div>
+        <link rel="preload" href="fonts/Unicons.woff2" as="font" type="font/woff2" crossorigin="" />
+        <nav id="sticky-navbar" class="navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed">
+            <div class="container flex-lg-row flex-nowrap align-items-center">
+                <div class="navbar-brand w-100"><a href="https://htmlpage.cn"></a></div>
+                <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                    <div class="offcanvas-header d-lg-none">
+                        <h3 class="text-white fs-30 mb-0">HTMLPAGE.CN</h3><button type="button"
+                            data-bs-dismiss="offcanvas" aria-label="Close" class="btn-close btn-close-white"></button>
+                    </div>
+                    <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#image" class="nav-link">美食图片</a></li>
+                            <li class="nav-item"><a href="#recommend"
+                                    class="nav-link">美食推荐</a></li>
+                            <li class="nav-item"><a href="#blog"
+                                    class="nav-link">美食博客</a></li>
+                            <li class="nav-item"><a href="#contact"
+                                    class="nav-link">联系我们</a></li>
+                        </ul>
+                        <div class="offcanvas-footer d-lg-none">
+                            <div><a href="mailto:first.last@email.com" class="link-inverse">help@lapus.cn</a><br /> 00
+                                (123) 456 78 90 <br />
+                                <nav class="nav social social-white mt-4"><a href="#"><i
+                                            class="uil uil-twitter"></i></a><a href="#"><i
+                                            class="uil uil-facebook-f"></i></a><a href="#"><i
+                                            class="uil uil-dribbble"></i></a><a href="#"><i
+                                            class="uil uil-instagram"></i></a><a href="#"><i
+                                            class="uil uil-youtube"></i></a></nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <link rel="shortcut icon" href="img/favicon.png" />
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <div class="content-wrapper">
+            <header class="wrapper bg-light">
+                <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+                    <div class="container flex-lg-row flex-nowrap align-items-center">
+                        <div class="navbar-brand w-100"><a href="https://htmlpage.cn"></a></div>
+                        <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                            <div class="offcanvas-header d-lg-none">
+                                <h3 class="text-white fs-30 mb-0">HTMLPAGE.CN</h3><button type="button"
+                                    data-bs-dismiss="offcanvas" aria-label="Close"
+                                    class="btn-close btn-close-white"></button>
+                            </div>
+                            <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="#image" class="nav-link">美食图片</a></li>
+                                    <li class="nav-item dropdown"><a href="#recommend" data-bs-toggle="dropdown"
+                                            class="nav-link">美食推荐</a></li>
+                                    <li class="nav-item dropdown"><a href="#blog" data-bs-toggle="dropdown"
+                                            class="nav-link">美食博客</a></li>
+                                    <li class="nav-item dropdown"><a href="#contact" data-bs-toggle="dropdown"
+                                            class="nav-link">联系我们</a></li>
+                                </ul>
+                                <div class="offcanvas-footer d-lg-none">
+                                    <div><a href="mailto:first.last@email.com"
+                                            class="link-inverse">help@lapus.cn</a><br /> 00 (123) 456 78 90 <br />
+                                        <nav class="nav social social-white mt-4"><a href="#"><i
+                                                    class="uil uil-twitter"></i></a><a href="#"><i
+                                                    class="uil uil-facebook-f"></i></a><a href="#"><i
+                                                    class="uil uil-dribbble"></i></a><a href="#"><i
+                                                    class="uil uil-instagram"></i></a><a href="#"><i
+                                                    class="uil uil-youtube"></i></a></nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-other w-100 d-flex ms-auto"></div>
+                        
+                    </div>
+                </nav>
+            </header>
+            <section class="wrapper bg-light">
+                <div class="container pt-10 pt-md-14 text-center">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-7 col-xl-6 col-xxl-5 mx-auto">
+                            <h1 class="display-1 mb-3">欢迎来到美食网站</h1>
+                            <p class="lead fs-lg px-lg-10 px-xxl-8">这是一个关于美食的网站，你可以在这里找到各种各样的美味佳肴，学习简单的食谱，获取美食推荐，以及与我们联系
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper bg-light">
+                <div class="container pt-9 pt-md-11 pb-14 pb-md-16">
+                    <div class="projects-overflow mt-md-10 mb-10 mb-lg-15">
+                        <div class="project item">
+                            <div id="image" class="row">
+                                <figure class="col-lg-8 col-xl-7 offset-xl-1 rounded"> </figure><img src="img/R.jpg"
+                                    class="c36306" style="height: 700;">
+                                <div id="i2mpgg"
+                                    class="project-details d-flex justify-content-center flex-column c21769">
+                                    <div data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                                        class="card shadow rellax">
+                                        <div class="card-body">
+                                            <div class="post-header">
+                                                <h2 class="post-title mb-3">美食图片</h2>
+                                            </div>
+                                            <div class="post-content">
+                                                <p>这里是一些美食的图片，让你大饱眼福，激发你的食欲</p><a href="4"
+                                                    class="more hover link-purple">了解更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project item">
+                            <div id="recommend" class="row">
+                                <figure class="col-lg-8 col-xl-7 offset-xl-1 rounded"> </figure>
+                                <div id="ir3ueh"
+                                    class="project-details d-flex justify-content-center flex-column c22016">
+                                    <div data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                                        class="card shadow rellax">
+                                        <div class="card-body">
+                                            <div class="post-header">
+                                                <h2 class="post-title mb-3">美食推荐</h2>
+                                            </div>
+                                            <div class="post-content">
+                                                <p>这里是一些美食的推荐，让你知道哪里可以找到最好吃的美食，或者怎样搭配美食，以及美食的营养价值</p><a href="../food2/recommend.html"
+                                                    class="more hover link-leaf">了解更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><img src="img/first.jpg" alt="" class="c37238" style="height: 600;width: 1000;">
+                            </div>
+                        </div>
+                        <div class="project item">
+                            <div id="blog" class="row">
+                                <figure class="col-lg-9 col-xl-7 offset-xl-2 rounded"> </figure><img
+                                    src="img/second.jpg" class="c38378" style="height: 600;">
+                                <div id="ib2ayl"
+                                    class="project-details d-flex justify-content-center flex-column c22254">
+                                    <div data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                                        class="card shadow rellax">
+                                        <div class="card-body">
+                                            <div class="post-header">
+                                                <h2 class="post-title mb-3">美食博客</h2>
+                                            </div>
+                                            <div class="post-content">
+                                                <p>这里是一些美食博客的推荐，你可以点击方框中的图片阅读更多的内容，或者留下你的评论和建议</p><a href="../food3/index.html"
+                                                    class="more hover link-violet">了解更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project item">
+                            <div id="contact" class="row">
+                                <figure class="col-lg-9 offset-lg-3 col-xl-7 offset-xl-4 rounded"> </figure>
+                                <div id="isw5s9"
+                                    class="project-details d-flex justify-content-center flex-column c22492">
+                                    <div data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                                        class="card shadow rellax">
+                                        <div class="card-body">
+                                            <div class="post-header">
+                                                <h2 class="post-title mb-3">联系我们</h2>
+                                            </div>
+                                            <div class="post-content">
+                                                <p>如果你有任何关于美食的问题，建议，或者反馈，欢迎与我们联系。请填写下面的表格，我们会尽快回复你</p><a href="../food4/index.html"
+                                                    class="more hover link-yellow">立即联系</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><img src="img/R (1).jpg" class="c38772" style="width: 1000;">
+                            </div>
+                        </div>
+                        <div class="section" id="contact" style="background-image: url(https://pic.ntimg.cn/file/20181123/27799086_203233459084_2.jpg);">
+                            <br>
+                            <h2 style="text-align: center;">联系我们</h2>
+                            <p style="text-align: center;">如果你有任何关于美食的问题，建议，或者反馈，欢迎与我们联系。请填写下面的表格，我们会尽快回复你。</p>
+                            <form class="form-contact">
+                              <label for="name" style="text-align: center;">姓名：</label>
+                              <input class="input-contact" type="text" id="name" name="name" placeholder="请输入你的姓名">
+                              <label for="email" style="text-align: center;">邮箱：</label>
+                              <input class="input-contact" type="email" id="email" name="email" placeholder="请输入你的邮箱">
+                              <label for="message" style="text-align: center;">留言：</label>
+                              <input class="input-contact" type="text" id="message" name="message" placeholder="请输入你的留言">
+                              <input class="input-contact" type="submit" value="提交">
+                            </form>
+                          </div>
+                        <div class="project item"></div>
+                        <div class="project item"></div>
+                        <div class="project item"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</html>
